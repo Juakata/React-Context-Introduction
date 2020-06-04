@@ -1,4 +1,6 @@
 import React from 'react';
+import Field from './Field';
+import Button from './Button';
 
 class App extends React.Component {
   state = { language: 'us' };
@@ -11,11 +13,20 @@ class App extends React.Component {
     const { language } = this.state;
     return (
       <div className="ui container">
-        <div>
-          <h2>{language === 'us' ? 'Select your language: ' : 'Seleccione su idioma:'}</h2>
-          <i className="us flag myflag" onClick={() => this.handleLanguage('us')} />
-          <i className="es flag myflag" onClick={() => this.handleLanguage('es')} />
-        </div>
+        <h1>
+          {language === 'us' ? 'Select your language: ' : 'Seleccione su idioma:'}
+          <i
+            style={{ paddingLeft: '5px' }}
+            className="us flag myflag"
+            onClick={() => this.handleLanguage('us')}
+          />
+          <i
+            className="es flag myflag"
+            onClick={() => this.handleLanguage('es')}
+          />
+        </h1>
+        <Field />
+        <Button />
       </div>
     );
   }
