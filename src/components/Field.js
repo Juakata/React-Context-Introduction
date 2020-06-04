@@ -7,7 +7,7 @@ class Field extends React.Component {
     return (
       <div className="field">
         <label htmlFor="name">
-          {this.context === 'en' ? 'Name' : 'Nombre'}:
+          {this.context === 'us' ? 'Name' : 'Nombre'}:
           <input type="text" id="name" />
         </label>
       </div>

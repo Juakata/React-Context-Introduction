@@ -7,7 +7,7 @@ class Button extends React.Component {
   render() {
     return (
       <button  className="ui button primary" type="button">
-        {this.context === 'en' ? 'Submit' : 'Enviar'}
+        {this.context === 'us' ? 'Submit' : 'Enviar'}
       </button>
     );
   }
