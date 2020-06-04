@@ -1,6 +1,4 @@
 import React from 'react';
-import Field from './Field';
-import Button from './Button';
 
 class App extends React.Component {
   state = { language: 'us' };
@@ -25,8 +23,6 @@ class App extends React.Component {
             onClick={() => this.handleLanguage('es')}
           />
         </h1>
-        <Field />
-        <Button />
       </div>
     );
   }
